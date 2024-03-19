@@ -150,7 +150,7 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    height: auto;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -158,6 +158,10 @@ section {
 
 .section-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4rem;
 }
 
 /* PROFILE SECTION */
@@ -169,7 +173,7 @@ section {
     height: 80vh;
 }
 
-.section__pic-container {
+#profile .section__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
@@ -265,6 +269,16 @@ section {
 
 #about {
     position: relative;
+    margin-bottom: 10rem;
+}
+
+.section-sub-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
 }
 
 .about-containers {
@@ -276,11 +290,16 @@ section {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+    margin: 1rem;
 }
 
 .about-containers,
 .about-details-container {
     display: flex;
+}
+
+#about ul li {
+    margin-bottom: 10px;
 }
 
 .about-pic {
@@ -296,6 +315,7 @@ section {
 .details-container {
     padding: 1.5rem;
     flex: 1;
+    /* flex-direction: column; */
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -304,20 +324,40 @@ section {
 }
 
 .section-container {
-    gap: 4rem;
+    gap: 2rem;
     height: 80%;
 }
 
 .section__pic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 400px;
     width: 400px;
-    margin: auto 0;
+    margin: 1rem;
+}
+
+.swimming-icon {
+    height: 1.75rem;
+}
+
+.section__pic-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+.section__pic-container,
+.about-details-container {
+  flex: 1;
+  margin: 1rem;
 }
 
 /* EXPERIENCE SECTION */
 
 #experience {
     position: relative;
+    margin-bottom: 10rem;
 }
 
 .experience-sub-title {
@@ -357,6 +397,7 @@ article .icon {
 
 #projects {
     position: relative;
+    margin-bottom: 10rem;
 }
 
 .color-container {
@@ -387,6 +428,7 @@ article .icon {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    /* margin-bottom: 10rem; */
 }
 
 .contact-info-upper-container {

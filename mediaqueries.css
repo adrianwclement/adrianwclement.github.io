@@ -54,7 +54,7 @@
     }
     #profile {
         height: 83vh;
-        margin-bottom: 0;
+        margin-bottom: 5rem;
     }
     article {
         font-size: 1rem;
@@ -86,10 +86,20 @@
         gap: 0.5rem;
         text-align: center;
     }
+    .section-sub-container {
+        flex-direction: column;
+        align-items: center;
+    }
     .section__pic-container {
-        width: auto;
-        height: 46vw;
-        justify-content: center;
+        width: 80%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .about-details-container {
+        width: 100%;
+    }
+    .socials-container {
+        margin-bottom: 5rem;
     }
     .section__text__p2 {
         font-size: 1.25rem;
